@@ -1,15 +1,23 @@
 import React, {useState} from "react"
 import data from "./data"
+import Menu from "./Menu"
 
 function App() {
 
   const [foodItems, setFoodItems] = useState(data)
   return (
-    <div className="App">
-      <h3>Testing the Food Selector page</h3>
-      {console.log(foodItems)}
-    </div>
+    <section className="menu section">
+      <div className="title">
+          <h2>Our Menu</h2>
+          <div className="underline"></div>
+         
+      </div>
+    <Menu props={foodItems}/>
+    </section>
+ 
   );
 }
 
 export default App;
+
+// {console.log(foodItems)}
