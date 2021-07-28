@@ -1,7 +1,34 @@
 import React from "react";
 
-const Category = () => {
-return <h1>Button Category Component</h1>
+const Category = ({filterItem}) => {
+return (
+
+    <div className="btn-container">
+
+        <button className="filter-btn" onClick={() =>{
+            filterItem('breakfast')
+        }}>
+            All
+        </button>
+        <button className="filter-btn" onClick={() =>{
+            filterItem('breakfast')
+        }}>
+            breakfast
+        </button>
+        <button className="filter-btn" onClick={() =>{
+            filterItem('lunch')
+        }}>
+            lunch
+        </button>
+
+        <button className="filter-btn" onClick={() =>{
+            filterItem('shakes')
+        }}>
+           shakes
+        </button>
+    </div>
+
+);
 }
 
 

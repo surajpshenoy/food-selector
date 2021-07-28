@@ -8,10 +8,8 @@ function App() {
   const [foodItems, setFoodItems] = useState(data)
     //Function for filtering the menu array and creating category buttons
   const filterButton = (category) => {
-      const newData = data.filter((item) => {
-        item.category === category;
-        setFoodItems(newData)
-      })
+      const newData = data.filter((item) => item.category === category); 
+      setFoodItems(newData)
     }
   return (
     <section className="menu section">
@@ -20,7 +18,7 @@ function App() {
           <div className="underline"></div>
          
       </div>
-      <Category />
+    <Category filterItem={filterButton}/>
     <Menu props={foodItems}/>
     </section>
  
