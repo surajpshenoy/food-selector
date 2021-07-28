@@ -3,6 +3,11 @@ import Category from "./Category";
 import data from "./data"
 import Menu from "./Menu"
 
+//Filtering the data for getting the unique categories
+const categoryArray = new Set(data.map((item) => item.category));
+console.log(categoryArray);
+
+
 function App() {
 
   const [foodItems, setFoodItems] = useState(data)
