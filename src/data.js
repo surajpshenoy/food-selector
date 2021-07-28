@@ -79,6 +79,14 @@ const menu = [
       img: './images/item-11.jpg',
       desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
+    {
+      id: 11,
+      title: 'Chicken Kebab',
+      category: 'kebab',
+      price: 22.00,
+      img: './images/item-13.jpg',
+      desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+    },
   ];
   export default menu;
   

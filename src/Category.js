@@ -1,11 +1,26 @@
 import React from "react";
 
-const Category = ({filterItem}) => {
+const Category = ({categories, filterItem}) => {
 return (
-
+    
     <div className="btn-container">
 
-        <button className="filter-btn" onClick={() =>{
+        {categories.map((category, index) => {
+            return (
+                <button 
+                type="button" 
+                key={index} 
+                className="filter-btn" 
+                onClick={() => { filterItem(category);}}>{category}</button>);
+        })}
+    </div>
+);
+}
+
+export default Category;
+
+
+ {/* <button className="filter-btn" onClick={() =>{
             filterItem('all')
         }}>
             All
@@ -31,11 +46,4 @@ return (
             filterItem('pizza')
         }}>
            Pizza
-        </button>
-    </div>
-
-);
-}
-
-
-export default Category;
+        </button> */}
