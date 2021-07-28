@@ -6,6 +6,13 @@ import Menu from "./Menu"
 function App() {
 
   const [foodItems, setFoodItems] = useState(data)
+    //Function for filtering the menu array and creating category buttons
+  const filterButton = (category) => {
+      const newData = data.filter((item) => {
+        item.category === category;
+        setFoodItems(newData)
+      })
+    }
   return (
     <section className="menu section">
       <div className="title">
