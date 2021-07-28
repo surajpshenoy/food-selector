@@ -6,7 +6,7 @@ return (
     <div className="btn-container">
 
         <button className="filter-btn" onClick={() =>{
-            filterItem('breakfast')
+            filterItem('all')
         }}>
             All
         </button>
@@ -20,7 +20,7 @@ return (
         }}>
             lunch
         </button>
-
+  
         <button className="filter-btn" onClick={() =>{
             filterItem('shakes')
         }}>

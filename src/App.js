@@ -8,6 +8,12 @@ function App() {
   const [foodItems, setFoodItems] = useState(data)
     //Function for filtering the menu array and creating category buttons
   const filterButton = (category) => {
+
+    if(category === 'all')
+      {
+        setFoodItems(data);
+        return ;
+      }
       const newData = data.filter((item) => item.category === category); 
       setFoodItems(newData)
     }
