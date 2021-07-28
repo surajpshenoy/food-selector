@@ -26,6 +26,12 @@ return (
         }}>
            shakes
         </button>
+
+        <button className="filter-btn" onClick={() =>{
+            filterItem('pizza')
+        }}>
+           Pizza
+        </button>
     </div>
 
 );
